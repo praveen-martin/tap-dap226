@@ -7,13 +7,7 @@ import org.testng.annotations.DataProvider;
 @CucumberOptions(
     features = "src/test/resources/com/tap-project/features",
     glue = {"com.project.hook", "com.tap-project.stepdefinitions"},
-    plugin = {
-        "pretty",
-        "html:target/CucumberReports/CucumberReport-TestNG.html",
-        "json:target/cucumber-testng.json",
-        "junit:target/cucumber-testng.xml",
-        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
-    },
+    plugin={"pretty", "html:target/CucumberReports/CucumberReport-TestNG.html", "json:target/cucumber-testng.json", "junit:target/cucumber-testng.xml", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "html:target/cucumber-reports/cucumber.html", "json:target/cucumber-reports/cucumber.json", "junit:target/cucumber-reports/cucumber.xml"},
     monochrome = true,
     tags = "@smoke",
     dryRun = false,

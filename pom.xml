@@ -186,7 +186,13 @@
     </dependency>
     -->
     
-  </dependencies>
+  
+    <dependency>
+        <groupId>com.aventstack</groupId>
+        <artifactId>extentreports-testng-adapter</artifactId>
+        <version>1.2.2</version>
+    </dependency>
+</dependencies>
 
   <build>
     <plugins>
@@ -247,7 +253,7 @@
               <goal>generate</goal>
             </goals>
             <configuration>
-              <projectName>TAP Automation Project</projectName>
+              <>TAP Automation Project</>
               <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
               <inputDirectory>${project.build.directory}</inputDirectory>
               <jsonFiles>
